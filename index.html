@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KNIGHTRIP · Electric car rental in Orlando</title>
+    <meta name="description" content="Rent a 2023 Kia Niro EV in Orlando. Charged, detailed, and ready for your trip." />
+    <meta name="theme-color" content="#050505" />
+    <link rel="canonical" href="%SITE_URL%/" />
+
+    <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="KNIGHTRIP" />
+    <meta property="og:title" content="KNIGHTRIP · Electric car rental in Orlando" />
+    <meta property="og:description" content="Rent a 2023 Kia Niro EV in Orlando. Charged, detailed, and ready for your trip." />
+    <meta property="og:url" content="%SITE_URL%/" />
+    <meta property="og:image" content="%SITE_URL%/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="KNIGHTRIP wordmark on black" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Decide on the intro before first paint so nothing flashes. -->
+    <script>
+      (function () {
+        var d = document.documentElement;
+        d.classList.add('js');
+        try {
+          var seen = sessionStorage.getItem('knightripIntroSeen');
+          var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+          if (!seen && !reduce) {
+            d.classList.add('has-intro');
+            sessionStorage.setItem('knightripIntroSeen', '1');
+          }
+        } catch (e) {}
+      })();
+    </script>
+
+    <link
+      rel="preload"
+      as="image"
+      imagesrcset="/assets/photos/niro-side-lake-1000.webp 1000w, /assets/photos/niro-side-lake-2000.webp 2000w"
+      imagesizes="100vw"
+      fetchpriority="high"
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "KNIGHTRIP",
+        "description": "Rent a 2023 Kia Niro EV in Orlando. Charged, detailed, and ready for your trip.",
+        "url": "%SITE_URL%/",
+        "image": "%SITE_URL%/og.png",
+        "logo": "%SITE_URL%/assets/brand/knightrip-logo-white.png",
+        "areaServed": {
+          "@type": "City",
+          "name": "Orlando",
+          "containedInPlace": { "@type": "State", "name": "Florida" }
+        },
+        "address": { "@type": "PostalAddress", "addressLocality": "Orlando", "addressRegion": "FL", "addressCountry": "US" }
+      }
+    </script>
+    <script type="module" src="/src/main.js"></script>
+  </head>
+
+  <body>
+    <!-- Intro overlay: shown only when <html> has .has-intro (first visit per session, motion allowed). -->
+    <div id="intro" class="intro" aria-hidden="true">
+      <img class="intro__logo" src="/assets/brand/knightrip-logo-white.png" alt="" width="800" height="132" />
+      <button type="button" class="intro__skip">Skip intro</button>
+    </div>
+
+    <a class="visually-hidden" href="#main">Skip to content</a>
+
+    <header class="nav">
+      <div class="container nav__inner">
+        <a class="nav__logo" href="/" aria-label="KNIGHTRIP home">
+          <img src="/assets/brand/knightrip-logo-white.png" alt="KNIGHTRIP" width="130" height="21" />
+        </a>
+        <nav aria-label="Primary">
+          <ul class="nav__links">
+            <li><a class="nav__link" href="#the-car">The car</a></li>
+            <li><a class="nav__link" href="/charging">Charging guide</a></li>
+            <li class="nav__cta">
+              <a class="btn btn--sm" data-booking href="%BOOKING_URL%" target="_blank" rel="noopener">Book the Niro</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero__media">
+          <img
+            src="/assets/photos/niro-side-lake-2000.webp"
+            srcset="/assets/photos/niro-side-lake-1000.webp 1000w, /assets/photos/niro-side-lake-2000.webp 2000w"
+            sizes="100vw"
+            width="2000"
+            height="1125"
+            alt="A blue 2023 Kia Niro EV parked beside a lake in Orlando"
+            fetchpriority="high"
+            decoding="async"
+          />
+        </div>
+        <div class="hero__shade" aria-hidden="true"></div>
+        <div class="container hero__content">
+          <p class="eyebrow">Orlando&nbsp;&nbsp;·&nbsp;&nbsp;Electric&nbsp;&nbsp;·&nbsp;&nbsp;By the day</p>
+          <h1 class="h-display hero__title">Drive electric. Skip the pump.</h1>
+          <p class="lede hero__sub">A 2023 Kia Niro EV, charged and detailed, ready for your trip.</p>
+          <div class="cta-row">
+            <a class="btn" data-booking href="%BOOKING_URL%" target="_blank" rel="noopener">Book the Niro</a>
+            <a class="link-arrow" href="/charging">See the charging guide <span class="arrow" aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Numbers strip -->
+      <section class="numbers" aria-label="Key numbers">
+        <dl class="container numbers__grid">
+          <div class="stat reveal">
+            <dt class="visually-hidden">EPA range</dt>
+            <dd class="stat__value">253 mi</dd>
+            <dd class="stat__label">EPA range</dd>
+          </div>
+          <div class="stat reveal">
+            <dt class="visually-hidden">DC fast charge time</dt>
+            <dd class="stat__value">45 min</dd>
+            <dd class="stat__label">10 to 80 percent DC fast</dd>
+          </div>
+          <div class="stat reveal">
+            <dt class="visually-hidden">Level 2 charge time</dt>
+            <dd class="stat__value">6 to 9 hr</dd>
+            <dd class="stat__label">Level 2 overnight</dd>
+          </div>
+          <div class="stat reveal">
+            <dt class="visually-hidden">Seats</dt>
+            <dd class="stat__value">5</dd>
+            <dd class="stat__label">Seats</dd>
+          </div>
+        </dl>
+      </section>
+
+      <!-- The car -->
+      <section class="section" id="the-car">
+        <div class="container car__grid">
+          <div class="car__text reveal">
+            <h2 class="h-section">The Niro EV Wave</h2>
+            <p class="lede">
+              Kia's top trim. Heated and ventilated seats, a sunroof, wireless charging, and a driver display that
+              tells you exactly how far you can go. Quiet enough that the road becomes the only noise.
+            </p>
+            <dl class="features">
+              <div>
+                <dt>Range</dt>
+                <dd>253 miles EPA, plan 210 on the highway</dd>
+              </div>
+              <div>
+                <dt>Charging</dt>
+                <dd>CCS Combo 1 fast charging, J1772 at home</dd>
+              </div>
+              <div>
+                <dt>Cabin</dt>
+                <dd>Sunroof, heated and cooled seats, Harman Kardon audio</dd>
+              </div>
+              <div>
+                <dt>Tech</dt>
+                <dd>Wireless Apple CarPlay and Android Auto, adaptive cruise, lane centering</dd>
+              </div>
+              <div>
+                <dt>Space</dt>
+                <dd>5 seats, 22.8 cu ft behind the rear seats</dd>
+              </div>
+              <div>
+                <dt>Included</dt>
+                <dd>Charging cable, phone mount, charging guide</dd>
+              </div>
+            </dl>
+          </div>
+          <div class="photo photo--framed car__photo reveal">
+            <img
+              src="/assets/photos/niro-side-front-quarter-2000.webp"
+              srcset="/assets/photos/niro-side-front-quarter-1000.webp 1000w, /assets/photos/niro-side-front-quarter-2000.webp 2000w"
+              sizes="(min-width: 900px) 50vw, 100vw"
+              width="2000"
+              height="1125"
+              alt="The blue Niro EV Wave from the passenger side, parked in front of an office plaza"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Interior moment -->
+      <section class="moment" aria-label="Sunroof">
+        <div class="moment__media">
+          <img
+            src="/assets/photos/niro-sunroof-2000.webp"
+            srcset="/assets/photos/niro-sunroof-1000.webp 1000w, /assets/photos/niro-sunroof-2000.webp 2000w"
+            sizes="100vw"
+            width="2000"
+            height="1125"
+            alt="Looking up through the open sunroof at a palm tree and blue sky"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+        <div class="moment__shade" aria-hidden="true"></div>
+        <div class="container">
+          <p class="moment__line reveal">Sun in. Sound off.</p>
+        </div>
+      </section>
+
+      <!-- Why electric, why this one -->
+      <section class="why section">
+        <div class="container">
+          <div class="why__grid">
+            <div class="why__item reveal">
+              <h3>No gas stops</h3>
+              <p>Plug in overnight and start every day full. One 45 minute stop covers a run to Miami.</p>
+            </div>
+            <div class="why__item reveal">
+              <h3>Quiet by default</h3>
+              <p>No engine noise, no vibration. Long drives feel shorter.</p>
+            </div>
+            <div class="why__item reveal">
+              <h3>We answer</h3>
+              <p>A one page charging guide for this exact car and a real person if you get stuck.</p>
+            </div>
+          </div>
+          <div class="reveal">
+            <a class="btn" data-booking href="%BOOKING_URL%" target="_blank" rel="noopener">Check availability</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cabin detail -->
+      <section class="section" aria-label="Cabin detail">
+        <div class="container cabin">
+          <div class="photo reveal">
+            <img
+              src="/assets/photos/niro-cockpit-wheel-2000.webp"
+              srcset="/assets/photos/niro-cockpit-wheel-1000.webp 1000w, /assets/photos/niro-cockpit-wheel-2000.webp 2000w"
+              sizes="(min-width: 600px) 50vw, 100vw"
+              width="2000"
+              height="1125"
+              alt="Steering wheel and center stack of the Niro EV in daylight"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div class="photo reveal">
+            <img
+              src="/assets/photos/niro-cabin-wide-2000.webp"
+              srcset="/assets/photos/niro-cabin-wide-1000.webp 1000w, /assets/photos/niro-cabin-wide-2000.webp 2000w"
+              sizes="(min-width: 600px) 50vw, 100vw"
+              width="2000"
+              height="1125"
+              alt="Wide view of the dash with the phone mount and twin screens"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Charging teaser -->
+      <section class="teaser section">
+        <div class="container">
+          <div class="teaser__inner reveal">
+            <h2 class="h-section">Charging is easier than you think.</h2>
+            <p>
+              Plug in overnight at home, or stop once on a road trip. We wrote a one page guide for this exact car so
+              you never have to guess.
+            </p>
+            <a class="btn" href="/charging">Read the charging guide</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section" id="faq">
+        <div class="container">
+          <div class="faq reveal">
+            <h2 class="h-section">Good to know</h2>
+            <details>
+              <summary>Is this my first EV?</summary>
+              <p class="faq__body">
+                Good. The car shows range in miles, not percent. Plan on 210 highway miles and you will never be
+                surprised.
+              </p>
+            </details>
+            <details>
+              <summary>Where do I charge on a road trip?</summary>
+              <p class="faq__body">
+                Any CCS fast charger. The Florida Turnpike service plazas have them. The charging guide lists the
+                ones we use.
+              </p>
+            </details>
+            <details>
+              <summary>What does the charging cost?</summary>
+              <p class="faq__body">
+                Public fast charging runs about $0.45 per kWh, so a 10 to 80 percent stop is around $13.
+              </p>
+            </details>
+            <details>
+              <summary>Does the car need a special app?</summary>
+              <p class="faq__body">The charging guide lists the two apps worth setting up before you leave.</p>
+            </details>
+            <details>
+              <summary>What if I get stuck at a charger?</summary>
+              <p class="faq__body">Message us through the booking platform. Someone answers.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- Final CTA -->
+      <section class="final">
+        <svg class="orbits" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+          <ellipse cx="600" cy="300" rx="560" ry="170" fill="none" stroke="#4B4FA6" stroke-width="1" transform="rotate(-11 600 300)" />
+          <ellipse cx="600" cy="300" rx="430" ry="240" fill="none" stroke="#4E7A78" stroke-width="1" transform="rotate(17 600 300)" />
+          <ellipse cx="600" cy="300" rx="660" ry="110" fill="none" stroke="#B08A5A" stroke-width="1" stroke-dasharray="5 11" transform="rotate(-4 600 300)" />
+        </svg>
+        <div class="container reveal">
+          <h2 class="h-display">Ready when you are.</h2>
+          <a class="btn" data-booking href="%BOOKING_URL%" target="_blank" rel="noopener">Book the Niro</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <a class="footer__logo" href="/" aria-label="KNIGHTRIP home">
+          <img src="/assets/brand/knightrip-logo-white.png" alt="KNIGHTRIP" width="96" height="16" loading="lazy" />
+        </a>
+        <div class="footer__meta">
+          <span>KNIGHTRIP · Orlando, FL</span>
+          <a class="footer__link" href="/charging">Charging guide</a>
+        </div>
+        <span class="footer__copy">© 2026 KnightTrip LLC</span>
+      </div>
+    </footer>
+  </body>
+</html>
