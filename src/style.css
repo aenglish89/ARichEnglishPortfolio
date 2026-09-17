@@ -904,6 +904,10 @@ html.has-intro .intro__logo {
     grid-template-columns: repeat(3, 1fr);
     gap: clamp(28px, 3vw, 48px);
   }
+
+  .places--two {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .place {
